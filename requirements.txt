@@ -6,7 +6,7 @@ attrs==19.1.0
 chardet==3.0.4
 dump1090exporter==18.7.1
 idna==2.8
-multidict==4.5.2
+multidict==4.7.1
 prometheus-metrics-proto==18.1.1
 protobuf==3.8.0
 quantile-python==1.1
