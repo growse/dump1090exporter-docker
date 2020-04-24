@@ -1,0 +1,35 @@
+name: Build, test and publish
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test:
+    name: Build & Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build docker image
+      run: docker build . --file Dockerfile --tag dump1090-test-image
+    - name: Test docker image
+      # This should exit code 0
+      run: docker run dump1090-test-image --help
+  publish:
+    name: Build & Publish
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    if: github.event_name != 'pull_request'
+    steps:
+    - uses: docker/build-push-action@v1
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        repository: growse/dump1090-exporter
+        tags: latest
