@@ -1,4 +1,4 @@
-FROM python:3.7.3-alpine3.9
+FROM python:alpine
 
 LABEL MAINTAINER="Andrew Rowson <docker@growse.com>"
 
