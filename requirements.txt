@@ -8,7 +8,7 @@ dump1090exporter==18.7.1
 idna==2.9
 multidict==4.7.6
 prometheus-metrics-proto==18.1.2
-protobuf==3.11.3
+protobuf==3.12.0
 quantile-python==1.1
 six==1.14.0
 yarl==1.4.2
