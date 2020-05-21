@@ -10,5 +10,5 @@ multidict==4.7.6
 prometheus-metrics-proto==18.1.2
 protobuf==3.12.1
 quantile-python==1.1
-six==1.14.0
+six==1.15.0
 yarl==1.4.2
