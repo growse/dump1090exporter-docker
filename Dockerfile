@@ -1,4 +1,4 @@
-FROM python:3.8.3-slim-buster
+FROM python:3.8.4-slim-buster
 
 LABEL MAINTAINER="Andrew Rowson <docker@growse.com>"
 
@@ -10,7 +10,7 @@ RUN python3 -m virtualenv $VIRTUAL_ENV
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
 
-FROM python:3.8.3-slim-buster
+FROM python:3.8.4-slim-buster
 ENV VIRTUAL_ENV=/opt/venv
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 COPY --from=0 /opt/venv /opt/venv
