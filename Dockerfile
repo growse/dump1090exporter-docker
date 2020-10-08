@@ -3,6 +3,7 @@ FROM python:3.9.0-slim-buster
 LABEL MAINTAINER="Andrew Rowson <docker@growse.com>"
 
 WORKDIR /opt/
+RUN apt-get update && apt-get install build-essential -y
 ENV VIRTUAL_ENV=/opt/venv
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 RUN pip install virtualenv
