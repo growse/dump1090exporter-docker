@@ -11,4 +11,4 @@ prometheus-metrics-proto==18.1.2
 protobuf==3.14.0
 quantile-python==1.1
 six==1.15.0
-yarl==1.6.2
+yarl==1.6.3
