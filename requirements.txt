@@ -4,7 +4,7 @@ async-timeout==3.0.1
 asynctest==0.13.0
 attrs==20.3.0
 chardet==3.0.4
-dump1090exporter==20.1.0
+dump1090exporter==21.0.0
 idna==3.1
 multidict==5.1.0
 prometheus-metrics-proto==18.1.2
