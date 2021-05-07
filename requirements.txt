@@ -2,7 +2,7 @@ aiohttp==3.7.4.post0
 aioprometheus==20.0.1
 async-timeout==3.0.1
 asynctest==0.13.0
-attrs==20.3.0
+attrs==21.1.0
 chardet==3.0.4
 dump1090exporter==21.0.0
 idna==3.1
