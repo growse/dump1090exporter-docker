@@ -1,5 +1,5 @@
 aiohttp==3.7.4.post0
-aioprometheus==20.0.1
+aioprometheus==20.0.2
 async-timeout==3.0.1
 asynctest==0.13.0
 attrs==21.2.0
